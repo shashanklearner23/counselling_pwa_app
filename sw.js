@@ -1,4 +1,4 @@
-const CACHE_NAME = 'counselling-app-v1';
+const CACHE_NAME = 'counselling-v1';
 const ASSETS = [
   './',
   './index.html',
