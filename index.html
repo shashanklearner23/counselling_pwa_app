@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#f59e0b">
-    <title>COUNSELLING APP</title>
+    <title>Counselling App</title>
     <link rel="manifest" href="manifest.json">
     <style>
         body {
@@ -54,17 +54,17 @@
 </head>
 <body>
 
-    <h1>COUNSELLING APP</h1>
+    <h1>Counselling App</h1>
 
-    <button id="install-btn">📥 Install App</button>
+    <button id="install-btn">📥 Download App</button>
     
     <div class="container" id="project-list"></div>
 
     <script>
         const myProjects = [{ 
-            name: "AI Search Tool", 
+            name: "Launch Counselling App", 
             url: "https://script.google.com/macros/s/AKfycbzUcZEASvFx1TLg1xkkfvwz6Mr-m5hza5XQ59kEhmqgc4elUKGl6Qe8xsYtbH1UhUwl/exec", 
-            description: "Launch your AI student toolkit" 
+            description: "Access your portal" 
         }];
 
         const listContainer = document.getElementById('project-list');
@@ -72,7 +72,7 @@
             const card = document.createElement('a');
             card.href = project.url;
             card.className = 'project-card';
-            card.target = "_self"; // Opens inside the PWA window
+            card.target = "_self"; 
             card.innerHTML = `
                 <div class="project-info">
                     <h3>${project.name}</h3>
@@ -83,6 +83,7 @@
             listContainer.appendChild(card);
         });
 
+        // PWA Install Logic
         let deferredPrompt;
         const installBtn = document.getElementById('install-btn');
 
@@ -100,11 +101,12 @@
             });
         });
 
+        // Service Worker Registration
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('./sw.js')
-                    .then(reg => console.log('SW Registered'))
-                    .catch(err => console.log('SW Error', err));
+                    .then(reg => console.log('Counselling App SW Registered'))
+                    .catch(err => console.log('SW Registration Error', err));
             });
         }
     </script>
