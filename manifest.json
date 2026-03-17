@@ -1,7 +1,7 @@
 {
-  "name": "AI Tools Hub",
-  "short_name": "AITools",
-  "description": "Your launchpad for the AI era",
+  "name": "Counselling app",
+  "short_name": "Counselling",
+  "description": "Your launchpad for students",
   "start_url": "/pwa_app/",
   "scope": "/pwa_app/",
   "display": "standalone",
