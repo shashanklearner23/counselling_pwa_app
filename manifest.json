@@ -1,22 +1,16 @@
 {
-  "name": "Counselling App",
   "short_name": "Counselling",
-  "description": "Professional Counselling Portal",
-  "start_url": "/pwa_app/",
-  "scope": "/pwa_app/",
-  "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#f59e0b",
+  "name": "Counselling App for Students",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "https://cdn-icons-png.flaticon.com/192/3135/3135715.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "https://cdn-icons-png.flaticon.com/512/3062/3062531.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
-  ]
+  ],
+  "start_url": ".",
+  "background_color": "#f0f4f8",
+  "display": "standalone",
+  "theme_color": "#4A90E2",
+  "description": "Student support and counselling management tool."
 }
