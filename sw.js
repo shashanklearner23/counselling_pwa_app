@@ -1,4 +1,4 @@
-const CACHE_NAME = 'counsel-cache-v1';
+const CACHE_NAME = 'counsel-app-v1';
 const urlsToCache = [
   './',
   './index.html',
